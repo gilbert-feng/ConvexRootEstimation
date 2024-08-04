@@ -1,4 +1,4 @@
-To reproduce the simulation related to this paper, you can create your own "simulation" file and run the "main functions listed below".
+To reproduce the simulation related to this paper, you can create your own "simulation" file and run the "main" functions listed below.
 
 # 1.basic function
 power_sum.m	Inverse approximation function  <br>
