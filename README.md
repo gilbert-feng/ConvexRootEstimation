@@ -5,7 +5,7 @@ power_sum.m	Inverse approximation function  <br>
 tr_AB.m		Calculate trace of two compatible square matrices
 
 # 2.Weight matrix
-matrix_hh.m	Weight matrix with k1 and k2 neighbors<br>
+matrix_hh.m	Weight Matrix with k1 and k2 neighbors<br>
 make_neighborsw.m  Coordinate based weight matrix with given neighbors
 
 # 3.Basic estimator
@@ -17,7 +17,7 @@ impact.m		Impact measure of ADI, ATI, AII
 
 # 4.Main function
 sim_total_time.m	Computational time for different methods (not include impact)<br>
-sim_total_est.m	all Estimation results for different methods (include impact)
+sim_total_est.m	All estimation results for different methods (include impact)
 
 # 5.Folders
-simulation	simulation results
+simulation	Simulation results
