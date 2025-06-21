@@ -91,7 +91,7 @@ temp_Hessian = temp_Hessian';
 Hessian = Hessian + temp_Hessian;
 Hessian = 1/(sige)*Hessian;
 
-Omega(end,(weight_mat_num + 1):(end - 1)) = mu3/(2*sige)*zeros(1,n)*X;
+Omega(end,(weight_mat_num + 1):(end - 1)) = mu3/(2*sige)*ones(1,n)*X;
 Omega(end, end) = n*dev/(4*sige^2);
 temp_Omega = Omega - diag(diag(Omega));
 temp_Omega = temp_Omega';
