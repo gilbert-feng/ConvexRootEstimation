@@ -86,14 +86,16 @@ for i = 1:weight_mat_num
 end
 
 
-Omega((weight_mat_num + 1):end,(weight_mat_num + 1):end) = X'*Sigma_hat*X;
-Gamma((weight_mat_num + 1):end,(weight_mat_num + 1):end) = X'*X;
 temp_Gamma = Gamma - diag(diag(Gamma));
 temp_Gamma = temp_Gamma';
 Gamma = Gamma + temp_Gamma;
 temp_Omega = Omega - diag(diag(Omega));
 temp_Omega = temp_Omega';
 Omega = Omega + temp_Omega;
+
+Omega((weight_mat_num + 1):end,(weight_mat_num + 1):end) = X'*Sigma_hat*X;
+Gamma((weight_mat_num + 1):end,(weight_mat_num + 1):end) = X'*X;
+
 SE = (Gamma\Omega)/(Gamma');
 
 %----------------------------
